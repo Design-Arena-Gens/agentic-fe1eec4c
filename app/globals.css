@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --card-bg-light: theme(colors.card.light);
+  --card-bg-dark: theme(colors.card.dark);
+}
+
+.container-pad {
+  @apply p-4 md:p-6 lg:p-8;
+}
+
+.card {
+  @apply rounded-xl border border-gray-200/60 dark:border-white/10 bg-[var(--card-bg-light)] dark:bg-[var(--card-bg-dark)] shadow-sm;
+}
+
+.card-title {
+  @apply text-sm font-semibold tracking-wide text-gray-600 dark:text-gray-300 uppercase;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-lg border border-transparent bg-gray-900 text-white dark:bg-white dark:text-gray-900 px-3 py-2 text-sm font-medium hover:opacity-90 active:opacity-80 disabled:opacity-50;
+}
+
+.input {
+  @apply w-full rounded-lg border border-gray-300 dark:border-white/10 bg-white dark:bg-gray-900/60 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-gray-400 dark:focus:ring-gray-600;
+}
